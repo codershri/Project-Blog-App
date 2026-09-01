@@ -23,6 +23,7 @@ from django.contrib.auth import views as auth_view
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("register/", user_view.register, name='register'),
+    path("profile/", user_view.profile, name='profile'),
     path("", include('Blog_App.urls')),
     path('Blog_App/', include('Blog_App.urls')),
     path("login/", auth_view.LoginView.as_view(template_name='users/login.html') , name='login'),
