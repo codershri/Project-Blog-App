@@ -140,8 +140,6 @@ MAILERS = {
     },
 }
 
-print("EMAIL_USER:", os.environ.get('EMAIL_USER'))
-print("EMAIL_PASS:", os.environ.get('EMAIL_PASS'))
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
